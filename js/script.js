@@ -1,3 +1,4 @@
+
 "use strict"
 /*
 Consegna:
@@ -56,3 +57,14 @@ const images = [
   }
 ];
 
+const carouselContainer = document.querySelector(".carousel-container-custom");
+
+for (let i = 0; i < images.length; i++){
+  // ciclo l'array delle immagini per prendere un'immagine alla volta
+  const imageOnScreen = images[i];
+  
+  // aggiungo l'html per inserire l'immagine nel carousel container
+  carouselContainer.innerHTML += `<div class="carousel-image">
+  <img src="${imageOnScreen.image}" alt="" class="carousel-image">
+</div>`
+}

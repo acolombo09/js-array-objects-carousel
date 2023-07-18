@@ -7,20 +7,25 @@
 .carousel-container-custom{
   width: 700px;
   max-height: 500px;
-  position: relative;
   border: 1px solid red;
+  position: relative;
 }
 
-.carousel-container-custom img{
+.carousel-image{
   width: 700px;
   height: 500px;
+  position: absolute;
+}
+
+.carousel-container-custom .carousel-image img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .thumbnail-container-custom {
   width: 200px;
   height: 500px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
